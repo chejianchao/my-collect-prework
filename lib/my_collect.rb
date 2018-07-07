@@ -1,4 +1,8 @@
 def my_collection(array)
-  i = log10
+  i = 0
+  while i<array.size
+    array[i] = yield(array[i])
+    i+=1
+  end
 end
 
